@@ -1,9 +1,16 @@
 "use strict";
 
 let playerNumber = document.getElementById("noOfPlayers");
+let buyInValue = document.getElementById("buyInValue");
 
 playerNumber.addEventListener("change", (e) => {
   console.log(e.target.value, "players");
+  playerNumber = e.target.value;
+});
+
+buyInValue.addEventListener("change", (e) => {
+  console.log(e.target.value, "is the buy in value");
+  buyInValue = e.target.value;
 });
 
 const greyChip = document.getElementById("greyChip");
