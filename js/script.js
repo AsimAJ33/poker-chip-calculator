@@ -21,6 +21,18 @@ const blackChip = document.getElementById("blackChip");
 const pinkChip = document.getElementById("pinkChip");
 const yellowChip = document.getElementById("yellowChip");
 
+const tableBody = document.getElementById("chipTable");
+
 function addToTable(colour) {
   console.log(`${colour} chip was pressed`);
+
+  tableBody.innerHTML += `
+  <tr>
+    <td>${colour}</td>
+    <td><input class="tableField" id="qtyInSet" type="number" /></td>
+    <td><input class="tableField" id="value" type="number"</td>
+    <td><input class="tableField" id="perPlayer" type="number"</td>
+    <td><input class="tableField" id="remainingInSet" type="number"</td>
+  </tr>
+  `;
 }
