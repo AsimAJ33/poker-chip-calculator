@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 let playerNumber = document.getElementById("noOfPlayers");
 
-playerNumber.addEventListener('change', (e) => {
-    console.log(e.target.value);
+playerNumber.addEventListener("change", (e) => {
+  console.log(e.target.value, "players");
 });
 
 const greyChip = document.getElementById("greyChip");
@@ -14,8 +14,6 @@ const blackChip = document.getElementById("blackChip");
 const pinkChip = document.getElementById("pinkChip");
 const yellowChip = document.getElementById("yellowChip");
 
-greyChip.addEventListener('click', addGreyChipToTable);
-
-function addGreyChipToTable(){
-    console.log('Adding grey chip to table')
+function addToTable(colour) {
+  console.log(`${colour} chip was pressed`);
 }
