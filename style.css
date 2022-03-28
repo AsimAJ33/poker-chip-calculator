@@ -6,15 +6,24 @@
   text-align: center;
 }
 
-.player-count {
+.player-buyin {
   font-family: "Roboto", sans-serif;
   margin-left: 50px;
   padding-top: 10px;
 }
 
-input {
+#heading-buyin {
+  padding-top: 10px;
+}
+
+#noOfPlayers,
+#buyInValue {
   width: 10%;
   padding: 5px;
+}
+
+.tableField {
+  width: 50px;
 }
 
 .colour-selector {
@@ -45,4 +54,14 @@ input {
   text-align: center;
 }
 
-/* Table Styling */
+#chipTable {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  padding: 5px;
+}
