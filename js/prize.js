@@ -14,7 +14,10 @@ function emptyTable() {
   const rows = chipTableBody.rows.length;
   console.log(`${rows} to delete`);
   if (rows > 1) {
-    chipsTableBody.deleteRow(1);
+    for (let row = 0; row < rows; row++) {
+      console.log(`Deleting row ${row}`);
+      chipTableBody.deleteRow(row);
+    }
   }
 }
 
