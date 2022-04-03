@@ -1,25 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 .heading {
   padding-top: 20px;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
 
-.player-buyin {
+.subheading {
   font-family: "Roboto", sans-serif;
   margin-left: 50px;
   padding-top: 10px;
 }
 
-#heading-buyin {
-  padding-top: 10px;
-}
-
 #noOfPlayers,
-#buyInValue {
+#buyInValue,
+#buyInCashValue {
   width: 10%;
   padding: 5px;
+  margin-left: 50px;
 }
 
 .tableField {
@@ -31,13 +33,18 @@
   margin-left: 50px;
 }
 
+.margin {
+  padding-top: 10px;
+  margin-left: 50px;
+}
+
 .chips {
   width: 10%;
   padding-right: 10px;
   cursor: pointer;
 }
 
-#colourSelectorPara {
+p {
   font-family: "Roboto", sans-serif;
 }
 
@@ -64,4 +71,7 @@ th,
 td {
   border: 1px solid;
   padding: 5px;
+}
+
+th {
 }
